@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Au-lz-zIN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="pMH-n9-rfy">
+            <objects>
+                <navigationController id="2Au-lz-zIN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NLc-2d-DeZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fGC-fo-bi2" kind="relationship" relationship="rootViewController" id="hVY-AV-T5X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="265-Rk-hpH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-737" y="107"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="smm-fV-XGy">
+            <objects>
+                <viewController id="fGC-fo-bi2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="INy-08-ig3"/>
+                        <viewControllerLayoutGuide type="bottom" id="WaJ-qe-YiK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EBI-8i-GI3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDn-8p-7fb">
+                                <rect key="frame" x="8" y="298" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Qa1-Ye-4OP"/>
+                                </constraints>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylR-zK-ezS" userLabel="callbacksview">
+                                <rect key="frame" x="0.0" y="336" width="375" height="323"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="323" id="SaI-yu-bYi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2a-uk-PiH">
+                                <rect key="frame" x="96" y="298" width="133" height="30"/>
+                                <state key="normal" title="Insert Ad">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playback Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fni-VS-DLL">
+                                <rect key="frame" x="237" y="298" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="Bpa-d2-HDD"/>
+                                    <constraint firstAttribute="height" constant="30" id="rzy-M6-Man"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fni-VS-DLL" firstAttribute="leading" secondItem="x2a-uk-PiH" secondAttribute="trailing" constant="8" id="1Ho-3J-ebn"/>
+                            <constraint firstItem="hDn-8p-7fb" firstAttribute="leading" secondItem="EBI-8i-GI3" secondAttribute="leadingMargin" constant="-8" id="AsZ-t6-pxN"/>
+                            <constraint firstAttribute="trailing" secondItem="ylR-zK-ezS" secondAttribute="trailing" id="F3V-6a-wvi"/>
+                            <constraint firstItem="x2a-uk-PiH" firstAttribute="leading" secondItem="hDn-8p-7fb" secondAttribute="trailing" constant="8" id="VN9-Cw-hLx"/>
+                            <constraint firstItem="ylR-zK-ezS" firstAttribute="trailing" secondItem="fni-VS-DLL" secondAttribute="trailing" constant="28" id="aDd-TL-quN"/>
+                            <constraint firstItem="ylR-zK-ezS" firstAttribute="top" secondItem="x2a-uk-PiH" secondAttribute="bottom" constant="8" id="gT9-nf-JDV"/>
+                            <constraint firstItem="ylR-zK-ezS" firstAttribute="top" secondItem="fni-VS-DLL" secondAttribute="bottom" constant="8" id="jKY-ki-oi9"/>
+                            <constraint firstItem="ylR-zK-ezS" firstAttribute="top" secondItem="hDn-8p-7fb" secondAttribute="bottom" constant="8" symbolic="YES" id="kqu-JM-uot"/>
+                            <constraint firstItem="WaJ-qe-YiK" firstAttribute="top" secondItem="ylR-zK-ezS" secondAttribute="bottom" constant="8" symbolic="YES" id="lQH-eh-yp5"/>
+                            <constraint firstItem="ylR-zK-ezS" firstAttribute="leading" secondItem="EBI-8i-GI3" secondAttribute="leading" id="zJf-n6-q0x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WQr-P0-G1z"/>
+                    <connections>
+                        <outlet property="callbacksView" destination="ylR-zK-ezS" id="5GZ-6V-OiP"/>
+                        <outlet property="insertAdButton" destination="x2a-uk-PiH" id="j0b-ig-Uu1"/>
+                        <outlet property="playButton" destination="hDn-8p-7fb" id="ZNH-7E-u4Y"/>
+                        <outlet property="playbackTime" destination="fni-VS-DLL" id="Ral-O5-wsY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kt-Qy-wXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="108"/>
+        </scene>
+    </scenes>
+</document>
