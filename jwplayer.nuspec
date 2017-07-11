@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements-->
+        <id>Naxam.JWPlayer.iOS</id>
+        <version>2.7.4</version>
+        <description>Xamarin Binding Library - JWPlayer for iOS</description>
+        <authors>NAXAM</authors>
+        <owners>NAXAM CO.,LTD</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <title>Naxam - JWPlayer for iOS</title>
+        <releaseNotes>JWPlayer for iOS 2.7.4</releaseNotes>
+        <summary>Xamarin Binding Library - JWPlayer for iOS</summary>
+        <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/NAXAM/jwplayer-ios-binding</projectUrl>
+        <copyright>Copyright (c) 2017 NAXAM</copyright>
+        <tags>Xamarin.iOS, jwplayer</tags>
+    </metadata>
+    <!-- Optional 'files' node -->
+    <files>
+        <file src="Naxam.JWPlayer.iOS/bin/Release/Naxam.JWPlayer.iOS.dll" target="lib/Xamarin.iOS10/Naxam.JWPlayer.iOS.dll" />
+    </files>
+</package>
